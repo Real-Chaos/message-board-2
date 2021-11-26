@@ -1,0 +1,84 @@
+
+body {
+  background: url(/images/background.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.join-discussion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  padding: 2% 20%;
+}
+
+.join-discussion button {
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+  outline: none;
+  box-shadow: 0 0 30px rgb(214 215 216/60%);
+  border-radius: 8px;
+  padding: 2% 8%;
+  width: 65%;
+  font-size: larger;
+  border: none;
+}
+
+.join-discussion button a {
+  color: white;
+  text-decoration: none;
+}
+
+.message-card {
+  padding: 2% 20%;
+}
+
+
+.message-card-content {
+  /* background: #141414; */
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  box-shadow: 0 0 30px rgb(214 215 216/60%);
+  width: 50%;
+  border-radius: 10px;
+  margin: auto;
+  padding: 2% 8%;
+}
+
+.title {
+  /* color: #843c34; */
+  color: #c1c1c1;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom: solid #3c3c3b;
+  padding-bottom: 7px;
+}
+
+.message {
+  /* color: #f8b195; */
+  color: #aaaaaa;
+  font-weight: 600;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: solid #3c3c3b;
+  padding-bottom: 20px;
+}
+
+.nameAndDate {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #808080;
+}
+
+.author {
+  justify-self: start;
+}
+
+.date {
+  justify-self: end;
+}

@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+div.form {
+    padding: 10% 20%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.9);
+    display: grid;
+    padding: 2% 3%;
+    width: 60%;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0 0 30px rgb(214 215 216/60%);
+}
+
+
+form h1 {
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 0;
+}
+
+form input, textarea {
+    margin: 10px ;
+    border: solid #3c3c3b;
+    outline: none;
+    background: transparent;
+    border-radius: 7px;
+    display: block;
+    margin: 10px auto;
+    color: white;
+    font-size: 16px;
+}
+
+form input {
+    padding: 15px 20px;
+    width: 100%;
+}
+
+form textarea {
+    width: 100%;
+    resize: none;
+    height: 300px;
+    padding: 15px 20px;
+}
+
+
+form button {
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 7px;
+    background: transparent;
+    outline: none;
+    border: solid #3c3c3b;
+    color: white;
+    cursor: pointer;
+}
+
+.go-back-btn {
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 30px rgb(214 215 216/60%);
+}
+
+.go-back-btn a {
+    color: white;
+    text-decoration: none;
+}

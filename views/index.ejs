@@ -2,10 +2,25 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/homepage.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="join-discussion">
+      <button><a href="/new">Join the Discussion</a></button>
+    </div>
+    <div class="display-messages">
+      <% messages.forEach(message => { %>
+          <div class="message-card">
+            <div class="message-card-content">
+              <h1 class="title"><%= message.title %></h1>
+              <p class="message"><%= message.text %></p>
+              <div class="nameAndDate">
+                <h4 class="author"><%= message.user %></h4>
+                <h4 class="date"><%= formatDistance(message.added, message.added) %> ago</h4>
+              </div>
+            </div>
+          </div>
+     <% }) %>
+    </div>
   </body>
 </html>
